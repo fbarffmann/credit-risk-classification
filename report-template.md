@@ -6,7 +6,7 @@ In order to optimize our decision-making in regards to who is accepted and rejec
 
 ## Results
 
-* Machine Learning Model 1: Logistic Regression (0 = Healthy Loan, 1 = High-Risk Loan)
+Machine Learning Model 1: Logistic Regression (0 = Healthy Loan, 1 = High-Risk Loan)
     * Accuracy: 99% - The model correctly predicted the outcome for 99% of the test set.
     * Precision (0): 100% - The model's predictions for healthy loans were correct 100% of the time.
     * Precision (1): 84% - The model's predictions for high-risk loans were correct 84% of the time.
@@ -15,9 +15,8 @@ In order to optimize our decision-making in regards to who is accepted and rejec
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+The logistic regression model performed exceptionally well, achieving a 99% accuracy rate. It was particularly effective at predicting healthy loans (0s), with near-perfect precision and recall. This means the model almost never misclassified healthy loans and successfully identified nearly all of them.
 
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+For high-risk loans (1s), the model's performance was strong but slightly less reliable. It correctly identified 94% of actual high-risk loans, but its precision was lower at 84%, indicating that some healthy loans were misclassified as high-risk.
 
-If you do not recommend any of the models, please justify your reasoning.
+The overall takeaway is that the model excels at predicting healthy loans but may need refinement if correctly identifying high-risk loans is the priority. The importance of improving precision for high-risk loans depends on the specific business problem. If avoiding loan defaults is critical, more attention may be needed on enhancing the model's ability to accurately flag high-risk loans, even at the cost of slightly reducing its performance on healthy loans.
